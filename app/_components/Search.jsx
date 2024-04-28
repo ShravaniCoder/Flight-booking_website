@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { CalendarDays, ChevronRight } from "lucide-react";
+import { Button } from "/components/ui/button";
 
 function Search() {
     const [inputValue1, setInputValue1] = useState("")
@@ -36,8 +37,8 @@ function Search() {
     };
 
   return (
-    <section className="flex items-center justify-center mt-10">
-      <div className="bg-white h-[10vh] flex w-[65%] gap-3 items-center justify-center p-4 border border-slate-400 rounded-md">
+    <section className="flex items-center mt-10">
+      <div className="bg-white flex flex-col lg:flex-row lg:flex gap-3 items-center justify-center p-4">
         <div className="relative">
           <input
             type="text"
@@ -82,7 +83,7 @@ function Search() {
             Source
           </label>
         </div>
-        <div className="relative flex items-center">
+        <form className="relative flex items-center">
           <input
             type="text"
             value={inputValue3}
@@ -104,12 +105,9 @@ function Search() {
           >
             Date
           </label>
-        </div>
+        </form>
 
-        <button className="w-[23%] flex items-center justify-between px-4 bg-orange-500 text-white h-[5vh] rounded-full">
-          Search
-          <ChevronRight />
-        </button>
+        <Button variant="size" className="bg-orange-600 text-white rounded-full gap-3 text-base">Search <ChevronRight/></Button>
       </div>
     </section>
   );

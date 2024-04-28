@@ -44,7 +44,7 @@ function CategoryList() {
     };
 
   return (
-    <div className="px-10 md:px-20 md:mt-10 relative">
+    <div className="px-10 md:px-20 md:mt-5 relative">
       <div className="flex gap-5 overflow-auto scrollbar-hide" ref={listRef}>
         <ArrowLeftCircle
           className="absolute left-11 top-14 rounded-full bg-blue-400 text-white h-8 w-8 cursor-pointer"
