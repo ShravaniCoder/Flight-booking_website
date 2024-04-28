@@ -30,7 +30,7 @@ function SearchInput() {
   const handleFocus4 = () => setIsFocused4(true);
 
   return (
-    <div className="px-10 md:px-20 py-3">
+    <div className="px-8 md:px-20 py-3">
       
       <div className="lg:flex bg-white drop-shadow-xl p-2 rounded-2xl sm:flex md:flex-wrap flex-wrap gap-4 items-center justify-center">
         <div className="flex bg-gray-100 rounded-l-xl py-1 mb-2 sm:mb-0 px-2 divide-x">
