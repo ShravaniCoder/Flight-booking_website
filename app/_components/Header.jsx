@@ -7,8 +7,6 @@ import { SignInButton, SignUpButton, UserButton, useUser } from '@clerk/nextjs';
 
 
 
-
-
 function Header() {
   const { user, isSignedIn } = useUser();
 
